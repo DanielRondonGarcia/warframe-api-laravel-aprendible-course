@@ -18,12 +18,12 @@ class WarframeFactory extends Factory
     {
         return [
             'name' => $this->faker->name,
-            'description' => $this->faker->text,
-            'firstAbility' => $this->faker->text,
-            'secondAbility' => $this->faker->text,
-            'thirdAbility' => $this->faker->text,
-            'fourthAbility' => $this->faker->text,
-            'sex' => $this->faker->randomElements(['male', 'female']),
+            'description' => $this->faker->title,
+            'firstAbility' => $this->faker->userName,
+            'secondAbility' => $this->faker->userName,
+            'thirdAbility' => $this->faker->userName,
+            'fourthAbility' => $this->faker->userName,
+            'sex' => $this->faker->randomElement(['male', 'female']),
         ];
     }
 }
